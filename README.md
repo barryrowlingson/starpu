@@ -5,6 +5,7 @@ Some python scripts to generate STAR-PU values per practice from official source
 I've included the hard-coded files in the git repo. Other wise they're found as below
 * Demographic data - http://fingertips.phe.org.uk/profile/general-practice/data
 * STAR-PU weightings - http://www.hscic.gov.uk/prescribing/measures
+
 Assuming they keep roughly the same formats in future releases it should be pretty trivial to change.
 
 ## Usage
@@ -29,6 +30,9 @@ These arent custom objects, just formats for dicts. The general format for each 
 * `Code` is the organisation code of the practice.
 * `Age-Bracket` is self explanatory - formatted as a string ('0-4', '5-14', 15-24' ... '65-74', '75+')
 * `Value` is either the starpu weighting or a tuple of population (male, female) for that age-bracket
+
+## Things to consider
+Data for Practices G85078 and Y02725 (NHS Lambeth CCG and NHS East Leicestershire And Rutland CCG respectively) are missing, make of that what you will. Also I didn't do the calculations at the CCG level as the CCG sheet is missing the code, and would require another lookup file.
 
 ***
 Final things - If people do actually want to use this fantastic go ahead, knocked this up in an evening after trying to compare some presribing data on openprescribing.net.
