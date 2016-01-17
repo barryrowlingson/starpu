@@ -1,5 +1,5 @@
 # STAR-PU
-Some python scripts to generate STAR-PU values per practice from official sources.
+Some python scripts to generate STAR-PU values per practice from official sources. Only dependency is OpenPyxl installed via `pip install openpyxl`.
 
 ## Data
 I've included the hard-coded files in the git repo. Other wise they're found as below
