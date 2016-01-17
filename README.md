@@ -1,6 +1,12 @@
 # STAR-PU
 Some python scripts to generate STAR-PU values per practice from official sources.
 
+## Data
+I've included the hard-coded files in the git repo. Other wise they're found as below
+* Demographic data - http://fingertips.phe.org.uk/profile/general-practice/data
+* STAR-PU weightings - http://www.hscic.gov.uk/prescribing/measures
+Assuming they keep roughly the same formats in future releases it should be pretty trivial to change.
+
 ## Usage
 Either you can look inside the guts - There aren't many comments (yet) but it's pretty simple what it's doing
 Or you can use the simple version and use the starpu.py module.
