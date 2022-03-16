@@ -4,7 +4,7 @@ def get_demographics(path):
     wb = op.load_workbook(path)
     sheet = wb['Practice']
     demogs = {}
-    for row in sheet.iter_rows('A4:AP7761'):
+    for row in sheet.iter_rows(4):
         x = parse_row(row)
         if type(x) == type({}):
             demogs[row[0].value] = x
